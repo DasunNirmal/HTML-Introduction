@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Introduction">
+    <meta name="keywords" content="Dasun Nirmal Student of IJSE,learning to be a software engineer">
+    <meta name="author" content="Dasun Nirmal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Introduction</title>
+</head>
+    <body>
+
+        <!--absolute path / root path / relative path-->
+        <img src="assests/images/Brian%20&%20Stewie.jpeg" title="Brian and Stewie" alt="Brian and Stewie" width="634">
+
+        <!--large / medium / small-->
+        <picture>
+            <source media="(min-width: 1000px)" srcset="assests/images/photo_6190468851037223435_x.jpg">
+            <source media="(min-width: 800)" srcset="assests/images/photo_6190468851037223436_x.jpg">
+            <img src="assests/images/photo_6190468851037223439_x.jpg" title="iphone" alt="iphone">
+        </picture>
+
+        <!--Without controls video controls will not show up,
+        and with muting by default the video will not auto play.-->
+        <video controls autoplay loop muted poster="assests/images/adven.jpg" width="720px" height="420">
+            <source src="assests/videos/car.mp4" type="video/mp4">
+            <source src="assests/videos/car.webm" type="video/webm">
+            <track label="English" kind="subtitles" src="assests/sub/sample.vtt" srclang="en" default>
+            Your browser does not support the video tag.
+            <track label="Arabic" kind="subtitles" src="assests/sub/arabic.vtt" srclang="ar">
+        </video>
+
+        <audio controls>
+            <source src="assests/audio/audio_file2.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+    </body>
+</html>
